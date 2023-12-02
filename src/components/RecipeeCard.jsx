@@ -11,7 +11,7 @@ const RecipeeCard = ({ data: { difficulty, id, image, title } }) => {
         navigate(`/recipee/${id}`);
       }}
     >
-      <LazyLoadImage src={image} alt="Image" />
+      <img src={image} alt="Image" />
       <p className="w-52 text-xl font-semibold">{title}</p>
       <p className="w-52">{difficulty}</p>
       <button className="bg-[#c93a59fe] text-white rounded-md my-5 hover:bg-gray-400 hover:text-black p-3">
